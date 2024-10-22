@@ -46,11 +46,13 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-       I am an experienced web developer with a background spanning 4 years in the financial industry. 
-       I'm originally from Bulgaria and now based in the Netherlands.
-       In addition to my developer role, I am the founder of Rizzii Solutions, a digital marketing agency specializing in 
-       social media marketing and web services. I hold a bachelor's degree in Software Engineering from Fontys University of Applied Sciences.
-       I am always open for new challenges and opportunities!
+
+
+      I am front-end developer with over 4 years of experience. 
+      Alongside my development expertise, I have recently worked with Artificial Intelligence and Large Language Models (LLMs), 
+      including experience in AI integration, model development, and data analysis. 
+      I hold a bachelor's degree in Software Engineering from Fontys University of Applied Sciences and am always open to new challenges and opportunities!
+
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>

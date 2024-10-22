@@ -257,35 +257,6 @@ const projects = [
     source_code_link: "https://gitlab.com/appsemble/appsemble-ai/",
   },
   {
-    name: "BandAI",
-    description:
-      "BandAI is an AI tool aimed to faciliate the mucisian work. It allows users to upload their music, generate short songs, images and lyrics with AI and share projects with other mucisians.",
-    tags: [
-      {
-        name: "NextJS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Web design",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "TailwindCSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "AI",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-    ],
-    image: './bandai.png',
-    source_code_link: "https://github.com/Fowthy/BandAI",
-  },
-  {
     name: "StudioNest",
     description:
       "Web app that allows users to book a rehearsal room or studio for their band, providing a convenient and efficient solution for their music needs. A project I worked on during my studies, which was fully tested, documented, and deployed (no longer ;_;)",
@@ -321,35 +292,6 @@ const projects = [
     ],
     image: './studionest.png',
     source_code_link: "https://github.com/Fowthy/StudioNest-API",
-  },
-  {
-    name: "Rizzii Solutions",
-    description:
-      "Rizzii Solutions is a digital agency created by me, that provides services such as social media marketing and management (Facebook Ads and Google Ads), web development, web design, and SEO. The website is created entirely by me from scratch. ",
-    tags: [
-      {
-        name: "ReactJS",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "TailwindCSS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "FastAPI",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Facebook Ads",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Web design",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: './rizzii.png',
-    source_code_link: "https://github.com/Fowthy/Rizzii",
   },
   {
     name: "Ordina Train Predictor",
