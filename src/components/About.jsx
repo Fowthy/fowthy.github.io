@@ -48,10 +48,12 @@ const About = () => {
       >
 
 
-      I am front-end developer with over 4 years of experience. 
-      Alongside my development expertise, I have recently worked with Artificial Intelligence and Large Language Models (LLMs), 
-      including experience in AI integration, model development, and data analysis. 
-      I hold a bachelor's degree in Software Engineering from Fontys University of Applied Sciences and am always open to new challenges and opportunities!
+      I'm a full-stack developer and AI automation specialist with 6+ years of experience building production software.
+      I architect and build SaaS platforms, AI-powered applications, and data-driven tools — from SEO rank trackers
+      to AI document assistants with RAG and multi-LLM orchestration. My stack spans Next.js, React, Python, FastAPI,
+      PostgreSQL, Docker, and modern AI tools like Mastra.ai, OpenAI, Anthropic Claude, and Google Gemini.
+      I hold a bachelor's degree in Software Engineering from Fontys University of Applied Sciences.
+      Currently running Folt Labs, delivering B2B software solutions.
 
       </motion.p>
 

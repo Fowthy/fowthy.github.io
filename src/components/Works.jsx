@@ -80,10 +80,8 @@ const Works = () => {
           variants={fadeIn("", "", 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-           examples of my work. While I can't provide GitHub links for some projects due to security considerations, 
-           I've included detailed explanations for others. 
-           They showcase my proficiency in both frontend and backend development, and offer insights into my problem-solving strategies and attention to detail.
+          A selection of projects spanning full-stack development, AI/ML, creative coding, and data analysis.
+          Each project links to its source code or live demo where available.
         </motion.p>
       </div>
 
