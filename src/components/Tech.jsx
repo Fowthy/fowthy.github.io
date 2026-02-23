@@ -1,4 +1,4 @@
-import React, { Suspense, useState, useRef, useEffect } from "react";
+import React, { Suspense, useState, useRef, useEffect, Component } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import {
   Decal,
@@ -12,7 +12,19 @@ import CanvasLoader from "./Loader";
 import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
 
-const TechBall = ({ icon, position, name }) => {
+// Error boundary to catch per-ball texture/render failures
+class BallErrorBoundary extends Component {
+  state = { hasError: false };
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) return null;
+    return this.props.children;
+  }
+}
+
+const TechBallInner = ({ icon, position, name }) => {
   const [decal] = useTexture([icon]);
   const [hovered, setHovered] = useState(false);
 
@@ -52,6 +64,12 @@ const TechBall = ({ icon, position, name }) => {
     </Float>
   );
 };
+
+const TechBall = (props) => (
+  <BallErrorBoundary>
+    <TechBallInner {...props} />
+  </BallErrorBoundary>
+);
 
 const Tech = () => {
   const [cols, setCols] = useState(7);
@@ -112,4 +130,22 @@ const Tech = () => {
   );
 };
 
-export default SectionWrapper(Tech, "");
+// Top-level error boundary so Tech section never crashes the page
+class TechErrorBoundary extends Component {
+  state = { hasError: false };
+  static getDerivedStateFromError() {
+    return { hasError: true };
+  }
+  render() {
+    if (this.state.hasError) return null;
+    return this.props.children;
+  }
+}
+
+const SafeTech = (props) => (
+  <TechErrorBoundary>
+    <Tech {...props} />
+  </TechErrorBoundary>
+);
+
+export default SectionWrapper(SafeTech, "");
