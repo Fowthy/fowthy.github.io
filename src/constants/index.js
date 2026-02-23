@@ -92,16 +92,40 @@ const techStack = {
 
 const experiences = [
   {
+    title: "Software Engineer (B2B)",
+    company_name: "Markov Solutions",
+    icon: './markov.png',
+    iconBg: "#1a1a2e",
+    date: "December 2025 - Present",
+    points: [
+      "Full-stack e-commerce web development and maintenance for B2B clients.",
+      "Building content automation pipelines and workflows.",
+      "CRM development and integration with existing business systems.",
+    ],
+  },
+  {
     title: "Founder & Lead Developer",
     company_name: "Folt Labs",
     icon: './foltlabs.png',
     iconBg: "#1a1a2e",
-    date: "September 2024 - Present",
+    date: "December 2025 - Present",
     points: [
       "Founded a software development company providing B2B full-stack and AI solutions.",
       "Architected and delivered 10+ SaaS platforms for SEO/marketing clients including rank trackers, AI-powered fact-checkers, and document assistants.",
       "Built AI agent systems using Mastra.ai, RAG with pgvector, and multi-LLM orchestration (OpenAI, Anthropic, Gemini).",
       "Designed production infrastructure with Docker, PostgreSQL, Redis, Nginx, and n8n workflow automation.",
+    ],
+  },
+  {
+    title: "Full-Stack Developer (B2B)",
+    company_name: "Serpact",
+    icon: './serpact.png',
+    iconBg: "#383E56",
+    date: "December 2024 - Present",
+    points: [
+      "Developing and delivering SaaS platforms for SEO and digital marketing — rank trackers, SERP analysis tools, keyword research hubs.",
+      "Building AI-powered applications including fact-checkers, grammar tools, and an intelligent document assistant with RAG.",
+      "Working with Next.js, FastAPI, PostgreSQL, Redis, Docker, and multiple AI APIs (OpenAI, Anthropic, Gemini).",
     ],
   },
   {
@@ -157,6 +181,20 @@ const experiences = [
 ];
 
 const projects = [
+  {
+    name: "Folt Labs Portfolio",
+    description:
+      "Company portfolio website for Folt Labs — a minimalistic, modern site built with Next.js, Three.js particle animations, and Framer Motion. Features service showcase, project gallery with category filtering, tech stack display, and a contact form.",
+    tags: [
+      { name: "Next.js", color: "blue-text-gradient" },
+      { name: "Three.js", color: "orange-text-gradient" },
+      { name: "Tailwind CSS", color: "green-text-gradient" },
+      { name: "Framer Motion", color: "pink-text-gradient" },
+      { name: "TypeScript", color: "blue-text-gradient" },
+    ],
+    image: './foltlabs_portfolio.png',
+    source_code_link: "https://folt-labs.com",
+  },
   {
     name: "AI Music Video Generator",
     description:
