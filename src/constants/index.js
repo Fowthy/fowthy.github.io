@@ -3,16 +3,25 @@ import {
   web,
   javascript,
   typescript,
-  html,
-  css,
   reactjs,
   tailwind,
-  mongodb,
   git,
-  figma,
   docker,
   creator,
   threejs,
+  nextjs,
+  python,
+  nodejs,
+  postgresql,
+  redis,
+  fastapi,
+  kubernetes,
+  nginx,
+  firebase,
+  aws,
+  prisma,
+  vercel,
+  openai,
 } from "../assets";
 
 export const navLinks = [
@@ -50,51 +59,33 @@ const services = [
 ];
 
 const technologies = [
-  {
-    name: "JavaScript",
-    icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
-    name: "React JS",
-    icon: reactjs,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
-  },
-  {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "docker",
-    icon: docker,
-  },
+  { name: "Next.js", icon: nextjs },
+  { name: "React", icon: reactjs },
+  { name: "TypeScript", icon: typescript },
+  { name: "JavaScript", icon: javascript },
+  { name: "Python", icon: python },
+  { name: "FastAPI", icon: fastapi },
+  { name: "Node.js", icon: nodejs },
+  { name: "PostgreSQL", icon: postgresql },
+  { name: "Redis", icon: redis },
+  { name: "Prisma", icon: prisma },
+  { name: "Docker", icon: docker },
+  { name: "Kubernetes", icon: kubernetes },
+  { name: "Nginx", icon: nginx },
+  { name: "AWS", icon: aws },
+  { name: "Firebase", icon: firebase },
+  { name: "Vercel", icon: vercel },
+  { name: "OpenAI", icon: openai },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Three.js", icon: threejs },
+  { name: "Git", icon: git },
 ];
-
-// Extended tech stack displayed as text badges
-const techStack = {
-  "Frontend": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Three.js", "Framer Motion", "shadcn/ui", "Radix UI"],
-  "Backend": ["Python", "FastAPI", "Flask", "Node.js", "Next.js API Routes"],
-  "AI & ML": ["OpenAI", "Anthropic Claude", "Google Gemini", "Mastra.ai", "Vercel AI SDK", "LangChain", "Whisper", "Spacy", "TensorFlow"],
-  "Databases": ["PostgreSQL", "Redis", "MongoDB", "MySQL", "pgvector", "Prisma", "Drizzle ORM", "SQLAlchemy"],
-  "DevOps & Infra": ["Docker", "Kubernetes", "Nginx", "GitHub Actions", "n8n", "AWS", "Vercel", "Firebase"],
-  "Tools & Other": ["Git", "FFmpeg", "Selenium", "Grafana", "Stripe", "GLSL Shaders", "WebGL"],
-};
 
 const experiences = [
   {
-    title: "Software Engineer (B2B)",
+    title: "Software Engineer",
     company_name: "Markov Solutions",
-    icon: './markov.png',
+    icon: './markovsolutions.png',
     iconBg: "#1a1a2e",
     date: "December 2025 - Present",
     points: [
@@ -117,9 +108,9 @@ const experiences = [
     ],
   },
   {
-    title: "Full-Stack Developer (B2B)",
+    title: "Full-Stack Developer",
     company_name: "Serpact",
-    icon: './serpact.png',
+    icon: './Serpact-logo-768x296.png',
     iconBg: "#383E56",
     date: "December 2024 - Present",
     points: [
@@ -334,4 +325,4 @@ const projects = [
   },
 ];
 
-export { services, technologies, techStack, experiences, projects };
+export { services, technologies, experiences, projects };
