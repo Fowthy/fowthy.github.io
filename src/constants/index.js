@@ -188,19 +188,6 @@ const experiences = [
 
 const projects = [
   {
-    name: "Folt Labs Portfolio",
-    description:
-      "Company portfolio website for Folt Labs — a minimalistic, modern site built with Next.js, Three.js particle animations, and Framer Motion. Features service showcase, project gallery with category filtering, tech stack display, and a contact form.",
-    tags: [
-      { name: "Next.js", color: "blue-text-gradient" },
-      { name: "Three.js", color: "orange-text-gradient" },
-      { name: "Tailwind CSS", color: "green-text-gradient" },
-      { name: "Framer Motion", color: "pink-text-gradient" },
-      { name: "TypeScript", color: "blue-text-gradient" },
-    ],
-    source_code_link: "https://folt-labs.com",
-  },
-  {
     name: "AI Music Video Generator",
     description:
       "AI-powered platform that generates professional music videos from audio files. Features audio analysis (BPM detection, section detection, energy analysis), AI character generation, creative direction with shot planning, keyframe and video clip generation via FAL.ai, and FFmpeg assembly with beat-synced cuts, crossfades, and color grading.",

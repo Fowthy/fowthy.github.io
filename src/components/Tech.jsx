@@ -8,9 +8,10 @@ import {
   Html,
 } from "@react-three/drei";
 
+import { motion } from "framer-motion";
 import CanvasLoader from "./Loader";
-import { SectionWrapper } from "../hoc";
 import { technologies } from "../constants";
+import { staggerContainer } from "../utils/motion";
 
 // Error boundary to catch per-ball texture/render failures
 class BallErrorBoundary extends Component {
@@ -142,10 +143,18 @@ class TechErrorBoundary extends Component {
   }
 }
 
-const SafeTech = (props) => (
+const SafeTech = () => (
   <TechErrorBoundary>
-    <Tech {...props} />
+    <motion.section
+      variants={staggerContainer()}
+      initial='hidden'
+      whileInView='show'
+      viewport={{ once: true, amount: 0.1 }}
+      className='max-w-[1600px] mx-auto px-2 sm:px-4 sm:py-16 py-10 relative z-0'
+    >
+      <Tech />
+    </motion.section>
   </TechErrorBoundary>
 );
 
-export default SectionWrapper(SafeTech, "");
+export default SafeTech;
