@@ -71,12 +71,17 @@ const Tech = () => {
 
   const spacing = 2.8;
   const totalRows = Math.ceil(technologies.length / cols);
-  const height = Math.max(400, totalRows * 120 + 60);
+
+  // Calculate camera distance to fit all balls with padding
+  const fov = 50;
+  const gridHalfHeight = ((totalRows - 1) / 2) * spacing + 2; // +2 for ball radius + float buffer
+  const cameraZ = gridHalfHeight / Math.tan((fov / 2) * Math.PI / 180) + 2; // +2 extra padding
+  const height = Math.max(400, totalRows * 140 + 80);
 
   return (
     <div style={{ width: '100%', height: `${height}px` }}>
       <Canvas
-        camera={{ position: [0, 0, 18], fov: 50 }}
+        camera={{ position: [0, 0, cameraZ], fov }}
         dpr={[1, 2]}
         gl={{ preserveDrawingBuffer: true }}
       >
