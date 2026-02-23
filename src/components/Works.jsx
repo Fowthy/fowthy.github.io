@@ -27,11 +27,17 @@ const ProjectCard = ({
         className='bg-tertiary p-5 rounded-2xl sm:w-[360px] w-full'
       >
         <div className='relative w-full h-64'>
-          <img
-            src={image}
-            alt='project_image'
-            className=' w-80 h-64 object-cover rounded-2xl m-auto'
-          />
+          {image ? (
+            <img
+              src={image}
+              alt='project_image'
+              className=' w-80 h-64 object-cover rounded-2xl m-auto'
+            />
+          ) : (
+            <div className='w-80 h-64 rounded-2xl m-auto bg-black-200 flex items-center justify-center'>
+              <span className='text-secondary text-[40px] font-bold'>{name.charAt(0)}</span>
+            </div>
+          )}
 
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover h-full'>
             <div

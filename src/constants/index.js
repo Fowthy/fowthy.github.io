@@ -1,27 +1,11 @@
 import {
-  backend,
-  web,
-  javascript,
-  typescript,
-  reactjs,
-  tailwind,
-  git,
-  docker,
-  creator,
-  threejs,
-  nextjs,
-  python,
-  nodejs,
-  postgresql,
-  redis,
-  fastapi,
-  kubernetes,
-  nginx,
-  firebase,
-  aws,
-  prisma,
-  vercel,
-  openai,
+  backend, web, creator,
+  javascript, typescript, reactjs, tailwind, git, docker, threejs, mongodb,
+  nextjs, python, nodejs, postgresql, redis, fastapi, kubernetes, nginx,
+  firebase, aws, prisma, vercel, openai, flask, tensorflow, selenium,
+  mysql, githubactions, grafana, framermotion, sqlalchemy, stripe,
+  anthropic, gemini, mastra, langchain, n8n, drizzle, pgvector,
+  whisper, spacy, vercelai, shadcnui, radixui, webgl, glsl, ffmpeg,
 } from "../assets";
 
 export const navLinks = [
@@ -59,26 +43,57 @@ const services = [
 ];
 
 const technologies = [
+  // Frontend
   { name: "Next.js", icon: nextjs },
   { name: "React", icon: reactjs },
   { name: "TypeScript", icon: typescript },
   { name: "JavaScript", icon: javascript },
+  { name: "Tailwind CSS", icon: tailwind },
+  { name: "Three.js", icon: threejs },
+  { name: "Framer Motion", icon: framermotion },
+  { name: "shadcn/ui", icon: shadcnui },
+  { name: "Radix UI", icon: radixui },
+  // Backend
   { name: "Python", icon: python },
   { name: "FastAPI", icon: fastapi },
+  { name: "Flask", icon: flask },
   { name: "Node.js", icon: nodejs },
+  // AI & ML
+  { name: "OpenAI", icon: openai },
+  { name: "Anthropic Claude", icon: anthropic },
+  { name: "Google Gemini", icon: gemini },
+  { name: "Mastra.ai", icon: mastra },
+  { name: "Vercel AI SDK", icon: vercelai },
+  { name: "LangChain", icon: langchain },
+  { name: "Whisper", icon: whisper },
+  { name: "Spacy", icon: spacy },
+  { name: "TensorFlow", icon: tensorflow },
+  // Databases
   { name: "PostgreSQL", icon: postgresql },
   { name: "Redis", icon: redis },
+  { name: "MongoDB", icon: mongodb },
+  { name: "MySQL", icon: mysql },
+  { name: "pgvector", icon: pgvector },
   { name: "Prisma", icon: prisma },
+  { name: "Drizzle ORM", icon: drizzle },
+  { name: "SQLAlchemy", icon: sqlalchemy },
+  // DevOps & Infra
   { name: "Docker", icon: docker },
   { name: "Kubernetes", icon: kubernetes },
   { name: "Nginx", icon: nginx },
+  { name: "GitHub Actions", icon: githubactions },
+  { name: "n8n", icon: n8n },
   { name: "AWS", icon: aws },
-  { name: "Firebase", icon: firebase },
   { name: "Vercel", icon: vercel },
-  { name: "OpenAI", icon: openai },
-  { name: "Tailwind CSS", icon: tailwind },
-  { name: "Three.js", icon: threejs },
+  { name: "Firebase", icon: firebase },
+  // Tools & Other
   { name: "Git", icon: git },
+  { name: "FFmpeg", icon: ffmpeg },
+  { name: "Selenium", icon: selenium },
+  { name: "Grafana", icon: grafana },
+  { name: "Stripe", icon: stripe },
+  { name: "GLSL Shaders", icon: glsl },
+  { name: "WebGL", icon: webgl },
 ];
 
 const experiences = [
@@ -97,7 +112,7 @@ const experiences = [
   {
     title: "Founder & Lead Developer",
     company_name: "Folt Labs",
-    icon: './foltlabs.png',
+    icon: './folt-labs.png',
     iconBg: "#1a1a2e",
     date: "December 2025 - Present",
     points: [
@@ -110,7 +125,7 @@ const experiences = [
   {
     title: "Full-Stack Developer",
     company_name: "Serpact",
-    icon: './Serpact-logo-768x296.png',
+    icon: './serpact.png',
     iconBg: "#383E56",
     date: "December 2024 - Present",
     points: [
@@ -183,7 +198,6 @@ const projects = [
       { name: "Framer Motion", color: "pink-text-gradient" },
       { name: "TypeScript", color: "blue-text-gradient" },
     ],
-    image: './foltlabs_portfolio.png',
     source_code_link: "https://folt-labs.com",
   },
   {
@@ -198,7 +212,7 @@ const projects = [
       { name: "FAL.ai", color: "blue-text-gradient" },
       { name: "TypeScript", color: "orange-text-gradient" },
     ],
-    image: './videogen.png',
+    image: '',
     source_code_link: "https://github.com/Fowthy",
   },
   {
@@ -212,7 +226,7 @@ const projects = [
       { name: "Vite", color: "pink-text-gradient" },
       { name: "WebGL", color: "blue-text-gradient" },
     ],
-    image: './ps1game.png',
+    image: '',
     source_code_link: "https://github.com/Fowthy/ps1_webgame",
   },
   {
@@ -225,7 +239,7 @@ const projects = [
       { name: "GLSL", color: "green-text-gradient" },
       { name: "JavaScript", color: "pink-text-gradient" },
     ],
-    image: './3dnexus.png',
+    image: '',
     source_code_link: "https://github.com/Fowthy",
   },
   {
@@ -239,7 +253,7 @@ const projects = [
       { name: "DVC", color: "pink-text-gradient" },
       { name: "Streamlit", color: "blue-text-gradient" },
     ],
-    image: './sueai.png',
+    image: '',
     source_code_link: "https://github.com/Fowthy/SueAI",
   },
   {
@@ -307,7 +321,7 @@ const projects = [
       { name: "OpenAI", color: "green-text-gradient" },
       { name: "Streamlit", color: "pink-text-gradient" },
     ],
-    image: './nlp.png',
+    image: '',
     source_code_link: "https://github.com/Fowthy/NLP_Playground",
   },
   {
