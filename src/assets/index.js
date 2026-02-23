@@ -18,19 +18,19 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
-import nextjs from "./tech/nextjs-original.svg";
-import python from "./tech/python.svg";
-import nodejs from "./tech/nodejs.svg";
-import postgresql from "./tech/postgresql.svg";
-import redis from "./tech/redis.svg";
-import fastapi from "./tech/fastapi.svg";
-import kubernetes from "./tech/kubernetes.svg";
-import nginx from "./tech/nginx.svg";
-import firebase from "./tech/firebase.svg";
-import aws from "./tech/aws.svg";
-import prisma from "./tech/prisma.svg";
-import vercel from "./tech/vercel.svg";
-import openai from "./tech/openai.svg";
+import nextjs from "./tech/nextjs-original.png";
+import python from "./tech/python.png";
+import nodejs from "./tech/nodejs.png";
+import postgresql from "./tech/postgresql.png";
+import redis from "./tech/redis.png";
+import fastapi from "./tech/fastapi.png";
+import kubernetes from "./tech/kubernetes.png";
+import nginx from "./tech/nginx.png";
+import firebase from "./tech/firebase.png";
+import aws from "./tech/aws.png";
+import prisma from "./tech/prisma.png";
+import vercel from "./tech/vercel.png";
+import openai from "./tech/openai.png";
 
 export {
   logo,
